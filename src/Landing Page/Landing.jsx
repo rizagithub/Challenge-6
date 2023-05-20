@@ -4,13 +4,6 @@ import React from 'react'
 function Landing() {
   return (
     <div>
-  {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossOrigin="anonymous" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="./css/style.css" /> */}
   {/* Navbar */}
   <header>
     <nav className="navbar navbar-expand-lg fixed-top pxc-7">
@@ -90,8 +83,10 @@ function Landing() {
       </div>
     </div>
   </article>
+
   {/* Testimonial */}
   <article id="testimonial">
+    
     <div id="testimonial-content" className="d-flex flex-column align-items-center justify-content-center">
       <h3 className="font-weight-bold mb-3">Testimonial</h3>
       <p className="mx-5 text-center">Berbagai review positif dari para pelanggan kami</p>
@@ -146,6 +141,7 @@ function Landing() {
         </div>
       </div>
     </div>
+
     {/* Banner sewa */}
     <div id="banner-sewa" className="d-flex align-items-center justify-content-center pxc-7">
       <div className="container banner d-flex flex-column align-items-center">

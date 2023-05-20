@@ -56,41 +56,11 @@ function CarsPage() {
     label: `nav ${key}`,
   }));
 
-  // console.log(gridDisplay);
   return (
     <div className="CarsPage">
       <Cars></Cars>
       <CarsList></CarsList>
-      <Footer></Footer>
-      {/* <Header>
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['2']}
-        items={items1}
-      />
-    </Header>
-      <Button type="primary" href='/landing'>Landing Page</Button>
-      <Title>items</Title>
-      <Button type="primary" onClick={reset}>Reset</Button>
-      <Button onClick={yangAvailable}>Yang available</Button>
-      <div>
-
-          { items? gridDisplay.map((rowItem) => (
-            <Row gutter={[16, 16]}>
-              {rowItem.map((item) => (
-                <Col span={8} key={item.id}>
-                  <Card title={item.manufacture}>
-                  <p>{item.model}</p>
-                  <p>{item.year}</p>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-          )) : <p>Loading...</p> }
-        
-      </div> */}
+      <Footer></Footer>  
     </div>
   );
 }

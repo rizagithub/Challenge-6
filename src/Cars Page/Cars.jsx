@@ -32,7 +32,7 @@ function CarsPage() {
   {/* Navbar */}
   <header>
     <nav className="navbar navbar-expand-lg fixed-top pxc-7">
-      <a className="navbar-brand" href="/">Binar Car Rental</a>
+      <a className="navbar-brand" href="/"><img className="col-md-auto p-0" src="img/logo.png" alt /></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span className="navbar-toggler-icon" />
       </button>
@@ -72,30 +72,14 @@ function CarsPage() {
           <option value={false}>Tanpa Sopir (Lepas Kunci)</option>
         </select>
       </div>
-      
-      <div className="col-lg">
-        <label for="tanggal" className="form-label">Pilih Tanggal</label>
-        <input type="date" className="form-control" placeholder="Tanggal" id="tanggal"/>              
-      </div>
-
-      {/* <div className="col">
-        <p>Waktu Jemput/Ambil</p>
+      <div className="col">
+        <p>Tanggal</p>
         <div className="dropdown">
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="waktu-jemput" data-bs-toggle="dropdown" aria-expanded="false">
-            Pilih Waktu
-            <img src="./img/fi_clock.png" />
-          </button>
-          <ul id="waktu-jemput-list" className="dropdown-menu" aria-labelledby="waktu-jemput">
-            <li><a className="dropdown-item waktu-jemput-item">-none-</a></li>
-            <li><a className="dropdown-item waktu-jemput-item">8.00</a></li>
-            <li><a className="dropdown-item waktu-jemput-item">9.00</a></li>
-            <li><a className="dropdown-item waktu-jemput-item">10.00</a></li>
-            <li><a className="dropdown-item waktu-jemput-item">11.00</a></li>
-            <li><a className="dropdown-item waktu-jemput-item">12.00</a></li>
-          </ul>
+          <DatePicker picker="year" className="btn-select rounded" onChange={(date, dateString)=>{
+            const year = dateString.split('-')[0]
+            setYear(year)}} />
         </div>
-      </div> */}
-
+      </div>
       <div className="col-lg">
         <label for="waktu-jemput" className="form-label">Waktu Jemput/Ambil</label>
         <input type="time" className="form-control form-item" id="waktu-jemput"/>              
